@@ -10,16 +10,20 @@ const Services = () => {
             .then(data => setServices(data))
     }, []);
     return (
-        <CardGroup>
-            <Row xs={1} md={3} lg={3} className="g-4">
-                {
-                    services.map(service => <Service
-                        key={service.id}
-                        service={service}
-                    ></Service>)
-                }
-            </Row>
-        </CardGroup>
+        <div id='services'>
+            <h2 className='text-center my-4'>Our Services</h2>
+            <CardGroup>
+                <Row xs={1} md={3} lg={3} className="g-4">
+                    {
+                        services.map(service => <Service
+                            key={service.id}
+                            service={service}
+                        ></Service>)
+                    }
+                </Row>
+            </CardGroup>
+        </div>
+
     );
 };
 
