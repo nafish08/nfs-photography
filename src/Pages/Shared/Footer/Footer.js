@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className='main-footer'>
-            <div className='row py-3 ps-4'>
+            <div className='row row-cols-1 row-cols-lg-4 row-cols-md-4 py-3 ps-4'>
                 <div className="col">
                     <p className='text-light text-left mb-0'>Copyright &copy; || NFS Photography<br />
                         <small className='text-secondary'>All photos are subject to copyright and may not be used without written
