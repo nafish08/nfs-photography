@@ -10,8 +10,8 @@ const Services = () => {
             .then(data => setServices(data))
     }, []);
     return (
-        <div id='services'>
-            <h2 className='text-center my-4'>Our Services</h2>
+        <div id='services' className='container'>
+            <h2 className='text-center my-4 text-uppercase'>Our Services</h2>
             <CardGroup>
                 <Row xs={1} md={3} lg={3} className="g-4">
                     {

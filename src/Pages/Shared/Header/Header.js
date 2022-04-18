@@ -11,7 +11,7 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <Navbar collapseOnSelect expand="lg" className='review_header' variant="dark">
+        <Navbar collapseOnSelect expand="lg" className='review_header' sticky='top' variant="dark">
             <Container>
                 <Navbar.Brand><Link className='text-light text-decoration-none' as={Link} to='/home'>NFS Photography</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -26,7 +26,7 @@ const Header = () => {
                     </Nav>
                     <Nav>
                         {
-                            user ? <button onClick={handleSignOut} className='btn btn-link text-white text-decoration-none'>Sign Out</button>
+                            user ? <button onClick={handleSignOut} className='btn btn-link text-white text-decoration-none'>Logout</button>
                                 :
                                 <Nav.Link as={Link} to='/login'>Login</Nav.Link>
                         }

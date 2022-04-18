@@ -6,6 +6,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import 'react-toastify/dist/ReactToastify.css';
+import './Login.css';
+import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -27,6 +29,9 @@ const Login = () => {
         auth
     );
 
+    if (loading) {
+        return <Loading></Loading>;
+    }
 
     if (user) {
         navigate(from, { replace: true });
@@ -58,24 +63,24 @@ const Login = () => {
     }
 
     return (
-        <div className='container w-50 mx-auto'>
-            <h2>Please Login</h2>
+        <div className='container w-25 mx-auto text-center'>
+            <h2 className='mt-5 mb-4 text-uppercase'>Please Login</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
                 <p className='text-danger'>{error ? 'Email or Passwrod Incorrect' : ''}</p>
-                <Button variant="primary" type="submit">
-                    Login
-                </Button>
-                <p>Don't have an account? <Link to='/register' className='text-primary text-decoration-none' onClick={navigateRegister}>Register</Link></p>
-                <p>Forget Password?<Button variant='link text-decoration-none' onClick={resetPassword}>Reset</Button></p>
+                <div className='main_div'>
+                    <Button variant="dark w-100 mb-5 fw-bold" type="submit">
+                        Login
+                    </Button>
+                </div>
+                <p>New to NFS Photography? <Link to='/register' className='text-primary text-decoration-none' onClick={navigateRegister}>Register</Link></p>
+                <p>Forget your password?<Button variant='link text-decoration-none' onClick={resetPassword}>Reset</Button></p>
                 <SocialLogin></SocialLogin>
                 <ToastContainer></ToastContainer>
             </Form>

@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
@@ -38,25 +39,24 @@ const Register = () => {
         console.log('Updated profile');
         navigate('/home');
     }
-
+    if (loading) {
+        return <Loading></Loading>;
+    }
     return (
-        <div className='container w-50 mx-auto'>
-            <h2>Please Register</h2>
+        <div className='container w-25 mx-auto text-center'>
+            <h2 className='mt-5 mb-4 text-uppercase'>Please Register</h2>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicName">
-                    <Form.Label>Name</Form.Label>
                     <Form.Control ref={nameRef} type="text" placeholder="Enter name" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="dark w-100 mb-5 fw-bold" type="submit">
                     Register
                 </Button>
                 <p>Already have an account? <Link to='/login' className='text-primary text-decoration-none' onClick={navigateLogin}>Login</Link></p>

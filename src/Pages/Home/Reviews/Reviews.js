@@ -11,7 +11,7 @@ const Reviews = () => {
             .then(data => setReviews(data))
     }, []);
     return (
-        <div className='container'>
+        <div id='reviews' className='container'>
             <CardGroup>
                 <Row className='text-center mx-auto my-5'>
                     <h1>Thank You for<br />Your <span className='highlight_text'>Awesome</span> Reviews!</h1>

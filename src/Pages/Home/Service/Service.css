@@ -1,0 +1,30 @@
+/* From uiverse.io by @fanishah */
+.card_style {
+    background-color: #212121;
+    border-radius: 1rem;
+    border: #212121 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+    border-bottom-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+}
+
+.card_style:hover {
+    transform: translateY(-1.5rem);
+    /* border: #f2295bf0 0.2em solid; */
+    border-radius: 2.5rem 0 2.5rem 0;
+}
+
+.image_style {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 2.5rem;
+}
+
+.image_style:hover {
+    border-radius: 2.5rem 0 2.5rem 0;
+}
+
+.button_style {
+    border-bottom-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+}

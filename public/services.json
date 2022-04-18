@@ -4,41 +4,41 @@
         "name": "Elementary",
         "price": "10000",
         "description": "1 Senior Photographer",
-        "img": "https://i.ibb.co/jJqPVJ1/service1.jpg"
+        "img": "https://i.ibb.co/Pg5ZRmp/daniel-jensen-t-Qpyp-KA92k8-unsplash.jpg"
     },
     {
         "id": 2,
         "name": "Economy",
         "price": "12500",
         "description": "1 Top Photographer",
-        "img": "https://i.ibb.co/2vnH4xv/service2.jpg"
+        "img": "https://i.ibb.co/nw90VS8/fabio-comparelli-uq2-E2-V4-Lh-CY-unsplash.jpg"
     },
     {
         "id": 3,
         "name": "Smart",
-        "price": "1000",
+        "price": "15000",
         "description": "1 Senior Photographer",
-        "img": "https://i.ibb.co/dphcxvh/service3.jpg"
+        "img": "https://i.ibb.co/bvwGvQd/willian-justen-de-vasconcellos-D8-XCVSn5-L1-I-unsplash.jpg"
     },
     {
         "id": 4,
         "name": "Standard",
-        "price": "1000",
+        "price": "25000",
         "description": "1 Senior Photographer",
-        "img": "https://i.ibb.co/SJYWV27/service4.jpg"
+        "img": "https://i.ibb.co/VqYPk9R/jeremy-bishop-CFv3bnt-Ql-Q-unsplash.jpg"
     },
     {
         "id": 5,
         "name": "Premium",
-        "price": "1000",
-        "description": "1 Senior Photographer",
-        "img": "https://i.ibb.co/GdvgMd8/service5.jpg"
+        "price": "30000",
+        "description": "2 Senior Photographer",
+        "img": "https://i.ibb.co/QvQ5Lr1/roberto-nickson-7-Bjm-DICVlo-E-unsplash.jpg"
     },
     {
         "id": 6,
         "name": "Enjoy Unlimited",
-        "price": "1000",
-        "description": "1 Senior Photographer",
-        "img": "https://i.ibb.co/44pBQpw/woman-s-face-1988681.jpg"
+        "price": "50000",
+        "description": "3 Senior Photographer",
+        "img": "https://i.ibb.co/4f5jV1L/pexels-zakaria-boumliha-2827380.jpg"
     }
 ]
