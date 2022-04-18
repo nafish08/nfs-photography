@@ -15,8 +15,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>Hassle-Free Booking</h3>
+                    <p>There will be no difficulties in making a reservation. You can always cancel your reservation while staying inside the specified time frame.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -27,8 +27,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Top-Rated Photographers</h3>
+                    <p>You will be assigned a top-rated professional photographer with extensive expertise.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -39,8 +39,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>Intelligent Editing</h3>
+                    <p>Professional AI-based editing with suitable color coloring is provided by us.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
