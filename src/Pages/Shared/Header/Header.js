@@ -11,9 +11,9 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" className='review_header' variant="dark">
             <Container>
-                <Navbar.Brand href="#home">NFS Photography</Navbar.Brand>
+                <Navbar.Brand><Link className='text-light text-decoration-none' as={Link} to='/home'>NFS Photography</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">

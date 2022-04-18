@@ -1,0 +1,18 @@
+.review_container {
+    border: none;
+    box-shadow: 0 5px 5px 2px #d3d3d3;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.review_header {
+    background-color: #2b1e17;
+}
+
+.rating {
+    color: #fe804b;
+}
+
+.highlight_text {
+    color: #fe804b;
+}
