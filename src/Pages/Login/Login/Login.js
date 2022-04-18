@@ -51,6 +51,7 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
+                <p className='text-danger'>{error ? 'Email or Passwrod Incorrect' : ''}</p>
                 <Button variant="primary" type="submit">
                     Login
                 </Button>
