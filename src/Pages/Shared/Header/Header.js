@@ -11,7 +11,7 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <Navbar collapseOnSelect expand="lg" className='review_header' sticky='top' variant="dark">
+        <Navbar collapseOnSelect expand="lg" className='bg-black' sticky='top' variant="dark">
             <Container>
                 <Navbar.Brand><Link className='text-light text-decoration-none' as={Link} to='/home'>NFS Photography</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -19,7 +19,7 @@ const Header = () => {
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to='/home'>Home</Nav.Link>
                         <Nav.Link href="home#services">Services</Nav.Link>
-                        <Nav.Link href="home#reviews">Client Reviews</Nav.Link>
+                        <Nav.Link href="home#reviews">Reviews</Nav.Link>
                         <Nav.Link as={Link} to='/blogs'>Blogs</Nav.Link>
                         <Nav.Link as={Link} to='/about'>About Us</Nav.Link>
 

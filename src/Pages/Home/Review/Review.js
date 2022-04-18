@@ -7,7 +7,7 @@ import './Review.css';
 const Review = ({ review }) => {
     const { comment, img, name } = review;
     return (
-        <Col className='mx-auto'>
+        <Col className='mx-auto mt-4'>
             <Card className='review_container'>
                 <div className='d-flex justify-content-center align-items-center review_header p-3'>
                     <Card.Img className='w-25 rounded-circle me-2' variant="top" src={img} />

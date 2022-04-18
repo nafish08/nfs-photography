@@ -1,23 +1,31 @@
 import React from 'react';
 import { useSignInWithFacebook, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import facebook from '../../../images/icons/facebook.png';
 import google from '../../../images/icons/google.png';
+import Loading from '../../Shared/Loading/Loading';
 import './SocialLogin.css'
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithFacebook, fbUser, fbLoading, fbError] = useSignInWithFacebook(auth);
     const navigate = useNavigate();
-
+    const location = useLocation();
+    let from = location.state?.from?.pathname || '/';
     let errorElement;
+
+    if (loading || fbLoading) {
+        return <Loading></Loading>;
+    }
+
     if (error || fbError) {
         errorElement =
             <p className='text-danger'>Error: {error?.message}{fbError?.message}</p>
     }
+
     if (user || fbUser) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     return (

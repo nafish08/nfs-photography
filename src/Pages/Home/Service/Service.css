@@ -20,8 +20,8 @@
     border-top-left-radius: 2.5rem;
 }
 
-.image_style:hover {
-    border-radius: 2.5rem 0 2.5rem 0;
+.card_style:hover .image_style {
+    border-radius: 2.5rem 0 0 0;
 }
 
 .button_style {
