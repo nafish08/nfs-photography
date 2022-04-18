@@ -1,23 +1,24 @@
 # NFS Photography
 
-[Live site link](https://github.com/facebook/create-react-app).
+[Live site link](https://nfs-photography.web.app).
 
 ## Features and Functionality
-- Navigation bar connect with the necessary routes.
-- Login page with with validation and authentication.
-- Register page with authentication and email verification.
-- Google sign in with authentication.
-- Private routes for user privacy security.
+- Responsive navigation bar.
+- Email/Password authentication.
+- Google/Facebook sign in. 
+- Registration with validation and email verification.
+- Private route for checkout.
+- Fancy 404 route
 
 ## Frameworks and libraries
 
 - REACT.js
 - JSX
-- React Router Dom
-- React Bootstrap
 - Vanilla Bootstrap
 - Font-awesome icons
 - Firebase authentication
 - React Firebase Hooks
+- React-Router-Dom
+- React-Bootstrap
 - React Toastify, etc.
 
